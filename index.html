@@ -5,23 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katik</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="navigation-bar">
-        <h3 id="logo">Katik</h3>
-   
-    <nav class="navigation">
-        <a href="">Luas Segitiga</a>
-        <a href="">Keliling Segitiga</a>
+    <header>
+    <nav id="navigation-bar">
+        <h3 class="logo">Katik</h3>
+
+        <nav class="navigation hide">
+            <a href="#luas segitiga">Luas Segitiga</a>
+            <a href="#keliling segitiga">Keliling Segitiga</a>
+        </nav>
+
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
     </nav>
-</header>
-<section class="input-luas-section">
-    <label for="input-tinggi" id="label-tinggi">Tinggi</label>
-    <input type="number" id="input-tinggi" class="katik-input">
-   <div class="buttons">
-    <button>Hitung</button>
-    <button>Reset</button>
-   </div>
-</section>
+        <section>
+            <div class="header-text">
+                <h1>Welcome to Katik</h1>
+                <p>Halo Semua, Selamat datang di katik!
+                    Sebuah web apps sederhana yang berfungsi untuk menghitung niai luas dan krliling banguin datar.
+                </p>
+            </div>
+            <div>
+                <h2 class="Luas-segitiga">Luas Segitiga</h2>
+                <img src="./assets/segitiga.jpg" class="img1" alt="luas segitiga">
+                <p class="rumus1">Rumus Luas Segitiga yaitu : <br>
+                    <strong> 1/2 x a x t</strong><br>
+                    Di mana : <br>
+                    L = Luas <br>
+                    a = Panjang alas <br>
+                    t = Tinggi 
+                </p>
+                <h2 class="rumus2">Hitung Luas Segitiga</h2>
+                <form id="form1" name="form" method="post" action="">
+                    <p>alas :
+                        <input type="text" name="alas"/>
+                    </p>
+                    <p>
+                        tinggi :
+                        <input type="text" name="tinggi"/>
+                    </p>
+                    <p>
+                        Hasil :
+                        <input type="text" name="hasil"/>
+                    </p>
+                    <p>
+                    <input 
+                     class="hitung"
+                     type="button" onclick="hitung()" value="hitung"/>
+                    <input 
+                    class="reset"
+                    type="reset">
+                    </p>
+                </form>
+                <h2 class="rumus2">Keliling Segitiga</h2>
+                <img src="./assets/segitiga.jpg" class="img1" alt="keliling-segitiga">
+                <p class="rumus1">Rumus Keliling Segitiga yaitu: <br>
+                    <strong>K = S1 + S2 + S3</strong><br>
+                    Di mana :<br>
+                    K = Keliling <br>
+                    S1 = Sisi A <br>
+                    S2 = Sisi B <br>
+                    S3 = Sisi C
+                </p>
+            </div>
+            <h2 class="rumus2">Hitung Keliling Segitiga</h2>
+            <form id="form1" name="form" onsubmit="return false;">
+                <p>Sisi1 :
+                    <input type="text" id="Sisi1" />
+                </p>
+                <p>Sisi2 :
+                    <input type="text" id="Sisi2" />
+                </p>
+                <p>Sisi3 :
+                    <input type="text" id="Sisi3" />
+                </p>
+                Hasil :
+                <input type="text" id="hasil" readonly />
+            </p>
+            <p>
+                <button class="hitung" onclick="hitung()">Hitung</button>
+                <button class="reset" onclick="resetForm()">Reset</button
+                </p>
+            </form>
+        </section>
+    </header>
 </body>
+<script src="./Js/script.js"></script>
 </html>
