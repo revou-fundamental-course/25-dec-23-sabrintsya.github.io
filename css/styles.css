@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d8eefe
+    ;
+}
+
+ a {
+    text-decoration: none;
+    color: #fffffe ;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+/* nav styles */
+
+#navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    background-color: #3da9fc;
+}
+.logo {
+    font-size: 1.8rem;
+    padding-left: 20px;
+    color: #fffffe;
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #fffffe;
+}
+
+.navigation {
+    position: fixed;
+    width: 94%;
+    top: 5rem;
+    left: 18px;
+    background-color: #97cef5 ;
+    padding: 7px 13px;  
+    border-radius: 5px;
+}
+.navigation a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navigation a:hover {
+    color: #ef4565;
+    
+}
+
+.hide {
+    display: none;
+}
+
+/* Luas segitiga style */
+
+.header-text {
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1rem auto;
+    width: 60%;
+    background-color: #fffffe;
+    color: #094067;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.header-text:hover {
+  background-color: #97cef5;
+  color: #fffffe;
+}
+
+.Luas-segitiga {
+  text-align: center;
+  border-radius: 10px;
+  background-color: #3da9fc;
+  color: #fffffe ;
+  margin: 1rem auto;
+  width: 40%;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.Luas-segitiga:hover {
+  background-color:#094067 ;
+}
+
+.img1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rumus1 {
+  padding: 2.5rem 2rem;
+  margin: 1rem auto;
+  background-color: #3da9fc;
+  color: #fffffe;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.rumus1:hover {
+  background-color: #094067;
+  transform: translate(40px,-40px);
+    opacity: .6;
+}
+
+.rumus2 {
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fffffe;
+  color: #094067 ;
+  margin: 1rem auto;
+  width: 40%;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.rumus2:hover {
+  background-color: #094067;
+  color: #fffffe;
+}
+
+#form1 {
+  text-align: center;
+  border-radius: 10px;
+  margin: 1rem auto;
+  width: 60%;
+  font-weight: bold;
+}
+
+.hitung, .reset {
+  background-color: #3da9fc;
+  color: #fffffe;
+  border: none;
+  padding: 10px 24px;
+  margin: 4px 2px;
+  border-radius: 20px;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.hitung:hover , .reset:hover {
+  background-color: #ef4565;
+}
+
+.hitung:active , .reset:active {
+  background-color: #ef4565;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+input[type=text] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #3da9fc;
+  border-radius: 4px;
+}
+
+input[type=text]:focus {
+  background-color: #ef4565;
+}
+
+
+@media screen and (min-width: 600px) {
+  .navigation {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+    
+  }
+
+  .navigation a {
+    display: inline-block;
+    padding: 2.5rem 2rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
