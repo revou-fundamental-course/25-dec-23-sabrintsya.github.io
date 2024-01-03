@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <>
     <nav id="navigation-bar">
         <h3 class="logo">Katik</h3>
 
@@ -32,7 +32,6 @@
                     Sebuah web apps sederhana yang berfungsi untuk menghitung niai luas dan krliling banguin datar.
                 </p>
             </div>
-            <div>
                 <h2 class="Luas-segitiga">Luas Segitiga</h2>
                 <img src="./assets/segitiga.jpg" class="img1" alt="luas segitiga">
                 <p class="rumus1">Rumus Luas Segitiga yaitu : <br>
@@ -43,30 +42,24 @@
                     t = Tinggi 
                 </p>
                 <h2 class="rumus2">Hitung Luas Segitiga</h2>
-                <form id="form1" name="form" method="post" action="">
-                    <p>alas :
-                        <input type="text" name="alas"/>
+                <form id="luasForm" name="luasForm" method="post" action="">
+                     <p>Alas:
+                        <input type="text" name="alas" />
+                    </p>
+                    <p>Tinggi:
+                        <input type="text" name="tinggi" />
+                    </p>
+                    <p>Hasil:
+                        <input type="text" name="luasHasil" readonly />
                     </p>
                     <p>
-                        tinggi :
-                        <input type="text" name="tinggi"/>
-                    </p>
-                    <p>
-                        Hasil :
-                        <input type="text" name="hasil"/>
-                    </p>
-                    <p>
-                    <input 
-                     class="hitung"
-                     type="button" onclick="hitung()" value="hitung"/>
-                    <input 
-                    class="reset"
-                    type="reset">
+                        <input class="hitung" type="button" onclick="hitungLuas()" value="Hitung" />
+                        <input class="reset" type="reset" value="Reset" />
                     </p>
                 </form>
             </section>
+
             <section id="keliling segitiga">
-            
                 <h2 class="rumus2">Keliling Segitiga</h2>
                 <img src="./assets/segitiga.jpg" class="img1" alt="keliling-segitiga">
                 <p class="rumus1">Rumus Keliling Segitiga yaitu: <br>
@@ -79,24 +72,24 @@
                 </p>
             </div>
             <h2 class="rumus2">Hitung Keliling Segitiga</h2>
-            <form id="form1" name="form" onsubmit="return false;">
-                <p>Sisi1 :
-                    <input type="text" id="Sisi1" />
-                </p>
-                <p>Sisi2 :
-                    <input type="text" id="Sisi2" />
-                </p>
-                <p>Sisi3 :
-                    <input type="text" id="Sisi3" />
-                </p>
-                Hasil :
-                <input type="text" id="hasil" readonly />
-            </p>
-            <p>
-                <button class="hitung" onclick="hitung()">Hitung</button>
-                <button class="reset" onclick="resetForm()">Reset</button
-                </p>
-            </form>
+            <form id="kelilingForm" name="kelilingForm" onsubmit="return false;">
+        <p>Sisi1:
+            <input type="text" id="Sisi1" />
+        </p>
+        <p>Sisi2:
+            <input type="text" id="Sisi2" />
+        </p>
+        <p>Sisi3:
+            <input type="text" id="Sisi3" />
+        </p>
+        <p>Hasil:
+            <input type="text" id="kelilingHasil" readonly />
+        </p>
+        <p>
+            <button class="hitung" onclick="hitungKeliling()">Hitung</button>
+            <button class="reset" onclick="resetKelilingForm()">Reset</button>
+        </p>
+    </form>
         </section>
     </header>
 </body>
